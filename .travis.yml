@@ -16,7 +16,7 @@ dist: trusty
 
 env:
   global:
-    - TOKEN="$API_TOKEN"
+    - TOKEN=$API_TOKEN
 
 before_install:
   - if [ $TRAVIS_OS_NAME == "linux" ]; then
