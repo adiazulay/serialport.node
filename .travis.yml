@@ -29,4 +29,4 @@ install:
   - npm install
 
 script:
-  - gulp build --electron="11.2.1" --token="$GITHUB_TOKEN" --tag="downloads"
+  - gulp build --electron="11.2.1" --token=$GITHUB_TOKEN --tag="downloads"
