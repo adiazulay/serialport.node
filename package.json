@@ -7,7 +7,7 @@
   "repository": "https://github.com/VSChina/serialport.node",
   "dependencies": {
     "glob": "^7.1.6",
-    "serialport": "^9.0.1",
+    "serialport": "^9.0.4",
     "usb-detection": "^4.10.0"
   },
   "author": "vsc-npm",
