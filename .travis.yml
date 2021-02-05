@@ -14,6 +14,10 @@ os:
   - windows
 dist: trusty
 
+env:
+  global:
+    - TOKEN="$API_TOKEN"
+
 before_install:
   - if [ $TRAVIS_OS_NAME == "linux" ]; then
       sudo apt-get update;
@@ -29,4 +33,4 @@ install:
   - npm install
 
 script:
-  - gulp build --electron="11.2.1" --token=$API_TOKEN --tag="downloads"
+  - gulp build --electron="11.2.1" --token="$TOKEN" --tag="downloads"
